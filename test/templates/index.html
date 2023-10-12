@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <header id="title">
+   <h2>
+    CONTORLS
+   </h2>
+  </header>
+ <section id="home">
+  <section id="content">
+   <h2>
+    Enter the details.
+   </h2>
+   <form action="/submit" method="post">
+    <input type="text" placeholder="SYMBOL" name="symbol">
+    <input type="text" name="start-date" placeholder="start-date">
+    <input type="text" name="end-date" placeholder="end-date">
+    <div id="indication">
+     <p>* Predicted that to <span id="ind">{{ indicate }}</span></p>
+     <p>{{ five }}</p>
+     <p>{{ ten }}</p>
+    </div>
+    <input type="submit" value="Submit" id="button">
+   </form>
+  </section>
+ </section>
+  <script>
+  </script>
+</body>
+</html>
